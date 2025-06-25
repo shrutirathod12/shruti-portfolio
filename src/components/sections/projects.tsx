@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from '@/components/ui/badge';
 import { Github, ExternalLink } from 'lucide-react';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
-import RecipeGenerator from '@/components/recipe-generator';
+
 import { MotionDiv } from '@/components/motion-div';
 
 const projects = [
@@ -23,7 +23,7 @@ const projects = [
     description: 'A secure authentication system that uses images and patterns instead of traditional text-based passwords.',
     tags: ['Flask', 'SQLite', 'SHA-256'],
     github: 'https://github.com/shrutirathod12/Graphical-Password-to-avoid-shoulder-surfing',
-    live: '#',
+    live: 'https://graphical-password-to-avoid-shoulder.onrender.com/',
     isAiDemo: false,
   },
   {
@@ -83,7 +83,7 @@ const ProjectCard = ({ project }: { project: (typeof projects)[0] }) => {
                 </Button>
               </DialogTrigger>
               <DialogContent className="sm:max-w-[425px] md:max-w-lg glassmorphism">
-                <RecipeGenerator />
+              
               </DialogContent>
             </Dialog>
           ) : LiveButton
